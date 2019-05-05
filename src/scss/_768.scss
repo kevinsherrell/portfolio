@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+  //    Header
+//   hero
+.hero{
+    height: 100vh;
+}
+  // projects
+  .projectDescription {
+    width: 100%;
+    button {
+      padding: 10px;
+      width: 49%;
+      font-size: 18px;
+      display: inline-block;
+      border: none;
+      background-color: white;
+      color: #d24d57;
+      border: 1px solid #d24d57;
+      border-radius: 5px;
+    }
+    .projectLive{
+        margin-right: 5px;
+    }
+  }
+}

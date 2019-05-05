@@ -94,9 +94,7 @@ class App extends Component {
                 <h2 className="heroSubTitle">
                   Full Stack Javascript Developer
                 </h2>
-                {/* <p className='heroIntro'>Hi,I'm Kevin Sherrell; a full stack Javascript developer with a passion for producing attractive, functional web applications. <br />
-
-                                </p> */}
+                
                 <div className="heroButtons">
                   <button>My Projects</button>
                   <button>My Resume</button>
@@ -109,7 +107,7 @@ class App extends Component {
           {/* <h2>SKILLS</h2> */}
 
           {/* mobile only */}
-          <h3>About Me</h3>
+          <h3>ABOUT ME</h3>
           <p className="aboutMe">
             I am a full stack Javascript developer based in the St. Louis
             metropolitan area. I love to learn new things and I am always
@@ -236,7 +234,7 @@ class App extends Component {
         <section className="projects">
           <div className="container">
             <div className="projectsHeader">
-              <h1>PROJECTS</h1>
+              <h2>PROJECTS</h2>
             </div>
 
             
@@ -247,8 +245,8 @@ class App extends Component {
               <div className="projectImage">
               <img src={notFacebookImage} alt="" />
             </div>
-              <button>Project</button>
-              <button>Github</button>
+              <button className='projectLive'>Project</button>
+              <button className='projectGithub'>Github</button>
             </div>
             <div className="projectDescription">
               <h3>Project Title</h3>
@@ -257,8 +255,8 @@ class App extends Component {
             <div className="projectImage">
               <img src={notFacebookImage} alt="" />
             </div>
-              <button>Project</button>
-              <button>Github</button>
+              <button className='projectLive'>Project</button>
+              <button className='projectGithub'>Github</button>
             </div>
             <div className="projectDescription">
               <h3>Project Title</h3>
@@ -267,8 +265,8 @@ class App extends Component {
             <div className="projectImage">
               <img src={notFacebookImage} alt="" />
             </div>
-              <button>Project</button>
-              <button>Github</button>
+              <button className='projectLive'>Project</button>
+              <button className='projectGithub'>Github</button>
             </div>
             <div className="projectDescription">
               <h3>Project Title</h3>
@@ -277,8 +275,8 @@ class App extends Component {
             <div className="projectImage">
               <img src={notFacebookImage} alt="" />
             </div>
-              <button>Project</button>
-              <button>Github</button>
+              <button className='projectLive'>Project</button>
+              <button className='projectGithub'>Github</button>
             </div>
           </div>
         </section>
