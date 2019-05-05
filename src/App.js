@@ -17,7 +17,6 @@ import skillBackgrondImage from './skillbackground.svg'
 import notFacebookImage from './notfacebook.PNG'
 // css
 import './css/styles.css'
-import { spawn } from 'child_process';
 
 
 class App extends Component {
