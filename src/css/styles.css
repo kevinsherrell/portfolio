@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,900");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700");
+* {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none; }
+
+body {
+  color: rgba(0, 0, 0, 0.7); }
+
+.flex {
+  display: flex; }
+
+.wrap {
+  flex-wrap: wrap; }
+
+.container {
+  width: 95%;
+  margin: 0 auto; }
+
+.backgroundContainer {
+  box-shadow: inset 0px 1000px 0px rgba(176, 42, 53, 0.8); }
+
+.scrolled {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: all ease-in 200ms;
+  z-index: 3;
+  float: right; }
+
+.scrolledButton {
+  display: block;
+  float: right;
+  border-radius: 50%;
+  border: none;
+  background-color: #43a2c9;
+  transition: all ease-in 250ms; }
+
+.pageHeader {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: all ease-in 200ms; }
+  .pageHeader .headerLogoContainer {
+    display: none; }
+  .pageHeader .logo {
+    width: 15%; }
+  .pageHeader .headerIntro {
+    display: none; }
+  .pageHeader nav {
+    width: 100%; }
+    .pageHeader nav .nonMobileNav {
+      display: none; }
+    .pageHeader nav .hamburgerButton {
+      display: block;
+      float: right;
+      border: none;
+      border-radius: 0%;
+      background-color: rgba(67, 162, 201, 0); }
+    .pageHeader nav .hamburger {
+      display: block;
+      width: 35px;
+      filter: invert(100%); }
+
+.hero {
+  padding-bottom: 20px;
+  height: 100%;
+  color: white;
+  text-align: center; }
+  .hero .heroContainer {
+    width: 90%;
+    margin: 0 auto; }
+  .hero .heroLogo {
+    width: 100px;
+    opacity: 0.5;
+    margin-right: 10px; }
+    .hero .heroLogo img {
+      width: 100%; }
+  .hero .heroName {
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: white; }
+  .hero .heroSubTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 10px; }
+  .hero .heroIntro {
+    margin: 20px 0 15px 0;
+    padding: 0 10px 10px 10px;
+    font-family: Goergia;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9); }
+    .hero .heroIntro span {
+      color: white;
+      font-size: 18px; }
+  .hero .heroButtons {
+    margin-top: 30px; }
+  .hero button {
+    width: 45%;
+    border: none;
+    border: 1px solid white;
+    background-color: rgba(67, 162, 201, 0);
+    color: white;
+    padding: 5px;
+    margin-right: 5px; }
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+  text-align: center; }
+
+.skills {
+  margin-top: 10px;
+  text-align: center; }
+  .skills .aboutMe {
+    width: 90%;
+    margin: 0 auto; }
+    .skills .aboutMe span {
+      color: palevioletred; }
+  .skills h2 {
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding: 10px 0;
+    color: rgba(0, 0, 0, 0.5); }
+  .skills .skillsListNonMobile {
+    display: none; }
+  .skills .skillsContainer p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5); }
+  .skills .skillsContainer img {
+    width: 50%; }
+  .skills .git {
+    grid-column-start: 2; }
+  .skills .html5,
+  .skills .css3,
+  .skills .react,
+  .skills .node,
+  .skills .express,
+  .skills .javascript,
+  .skills .bootstrap,
+  .skills .redux,
+  .skills .mongodb,
+  .skills .git {
+    padding-bottom: 10px; }
+
+.project {
+  width: 100%; }
+  .project img {
+    width: 100%; }
+
+.projectDescription {
+  width: 100%; }
+
+.contact {
+  padding: 10px;
+  text-align: center;
+  background-color: #d24d57;
+  color: white; }
+  .contact .thankYou {
+    margin-bottom: 15px; }
+  .contact span {
+    font-size: 25px; }
+  .contact .contactGitHub,
+  .contact .contactLinkedIn {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    border: 1px solid white;
+    letter-spacing: 1px; }
+  .contact .email {
+    font-size: 18px; }
+
+footer {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center; }
+  footer .footerHeader .footerLogo img {
+    width: 62px; }
