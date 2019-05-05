@@ -52,7 +52,7 @@ class App extends Component {
         const backgroundImage = require('./background.jpg')
         const backgroundStyles = {
             backgroundImage: `url("${backgroundImage}")`,
-            backgroundAttachment: 'fixed',
+            backgroundAttachment: 'scroll',
             backgroundSize: 'cover',
             backgroundPosition: "center",
             backgroundRepeat: 'no-repeat'
