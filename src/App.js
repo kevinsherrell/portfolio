@@ -94,7 +94,7 @@ class App extends Component {
                 <h2 className="heroSubTitle">
                   Full Stack Javascript Developer
                 </h2>
-                
+
                 <div className="heroButtons">
                   <button>My Projects</button>
                   <button>My Resume</button>
@@ -237,46 +237,51 @@ class App extends Component {
               <h2>PROJECTS</h2>
             </div>
 
-            
             <div className="projectDescription">
               <h3>notFacebook</h3>
               <p>A full stack replica of facebook.</p>
-              <p>TECHNOLOGIES USED: React, Redux, MongoDb, Express, Node, Passport.js, Sass</p>
+              <p>
+                React, Redux, MongoDb, Express, Node, Passport.js (jwt
+                strategy), Sass
+              </p>
               <div className="projectImage">
-              <img src={notFacebookImage} alt="" />
-            </div>
-              <button className='projectLive'>Project</button>
-              <button className='projectGithub'>Github</button>
+                <img src={notFacebookImage} alt="" />
+              </div>
+              <button className="projectLive">View Project</button>
+              <button className="projectGithub">Github</button>
             </div>
             <div className="projectDescription">
               <h3>Project Title</h3>
 
               <p> project 2 description</p>
-            <div className="projectImage">
-              <img src={notFacebookImage} alt="" />
-            </div>
-              <button className='projectLive'>Project</button>
-              <button className='projectGithub'>Github</button>
+              <p>technologies</p>
+              <div className="projectImage">
+                <img src={notFacebookImage} alt="" />
+              </div>
+              <button className="projectLive">View Project</button>
+              <button className="projectGithub">Github</button>
             </div>
             <div className="projectDescription">
               <h3>Project Title</h3>
 
               <p>project 3 description</p>
-            <div className="projectImage">
-              <img src={notFacebookImage} alt="" />
-            </div>
-              <button className='projectLive'>Project</button>
-              <button className='projectGithub'>Github</button>
+              <p>technologies</p>
+              <div className="projectImage">
+                <img src={notFacebookImage} alt="" />
+              </div>
+              <button className="projectLive">View Project</button>
+              <button className="projectGithub">Github</button>
             </div>
             <div className="projectDescription">
               <h3>Project Title</h3>
 
               <p>project 4 description</p>
-            <div className="projectImage">
-              <img src={notFacebookImage} alt="" />
-            </div>
-              <button className='projectLive'>Project</button>
-              <button className='projectGithub'>Github</button>
+              <p>tehcnologies</p>
+              <div className="projectImage">
+                <img src={notFacebookImage} alt="" />
+              </div>
+              <button className="projectLive">View Project</button>
+              <button className="projectGithub">Github</button>
             </div>
           </div>
         </section>

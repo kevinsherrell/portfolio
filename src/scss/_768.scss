@@ -2,7 +2,14 @@
   //    Header
 //   hero
 .hero{
-    height: 100vh;
+  .heroLogo{
+      margin-top: 0;
+      width: 130px;
+  }
+    button{
+        width: 30%;
+        padding: 10px;
+    }
 }
   // projects
   .projectDescription {
@@ -22,4 +29,5 @@
         margin-right: 5px;
     }
   }
+
 }
