@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,900");
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700');      
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
 * {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -11,6 +12,9 @@
 }
 body {
   color: rgba(0, 0, 0, 0.7);
+}
+h1,h2,h3,h4{
+  font-family: 'Lato', sans-serif;
 }
 .flex {
   display: -webkit-box;
@@ -30,8 +34,6 @@ body {
 .backgroundContainer {
   -webkit-box-shadow: inset 0px 1000px 0px rgba(176, 42, 53, .8);
           box-shadow: inset 0px 1000px 0px rgba(176, 42, 53, .8);
-
-//   height: 100vh;
 }
 .scrolled { 
   width: 100%;
@@ -47,7 +49,7 @@ body {
   float: right;
   border-radius: 50%;
   border: none;
-  background-color: rgba(67, 162, 201, 1);
+  background-color: rgba(0, 0, 0, 1);  
   -webkit-transition: all ease-in 250ms;
   transition: all ease-in 250ms;        
 }
@@ -98,7 +100,6 @@ body {
 
   .heroLogo {
     width: 100px;
-    // filter: invert(100%);
     opacity: 0.5;
     margin-right: 10px;
     img {
@@ -107,13 +108,14 @@ body {
   }
   .heroName {
     margin-top: 20px;
-    font-family: 'Josefin Sans', sans-serif;  
+    font-family: 'Lato', sans-serif;  
     font-size: 30px;
     font-weight: 300;
     color: rgba(255, 255, 255,1);
     
   }
   .heroSubTitle {
+    font-family: 'Lato';
     font-size: 20px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.9);  
@@ -136,7 +138,6 @@ body {
   }
   button {
     width: 45%;
-    // border-radius: 8px;
     border: none;  
     border: 1px solid white;       
     background-color: rgba(67, 162, 201,0);  
@@ -158,37 +159,30 @@ body {
   padding: 15px 0 15px 0;
   text-align: center;
 }
+
 .skills {
     margin-top: 10px;
-    // background-color: rgba(0,0,0 ,.05);  
     text-align: center;
     .aboutMe{
         width: 90%;
         margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 18px;
         span{
             color: palevioletred;
         }
     }           
-  h2 {
-    // position: sticky;
-    // top: 0;
+  h3 {
     height: 60px;
     text-align: center;  
     font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 5px;
     padding: 10px 0;
-    // background-color: rgba(147, 41, 51,1);        
     color: rgba(0,0,0,.5);
   }
   .skillsListNonMobile {
     display: none;
   }
   .skillsContainer {
-    // width: 30%;
-    // margin: 0 auto;
-    //   background-color: red;
-
     p {
       text-align: center;
       color: rgba(0,0,0,.5);  
@@ -215,20 +209,42 @@ body {
     padding-bottom: 10px;
   }
 }
-.project{
+.projects{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.projectsHeader{
+  margin-bottom: 20px;
+}
+h1{
+  font-family: 'Lato';
+  text-align: center;
+}
+.projectImage{
     width: 100%;
-    // min-height: 300px;
-    // background-color: magenta;
     img{
         width: 100%;
     }
 }
 .projectDescription{
     width: 100%;
-    // background-color: indigo;
+    button{
+      margin-bottom: 5px;
+      padding: 10px;
+      width: 100%;  
+      font-size: 18px;
+      display: block;
+      border: none;
+      background-color: white;  
+      color: #d24d57;  
+      border: 1px solid #d24d57;  
+      border-radius: 5px;
+    }
 }
 //
 .contact{
+  margin-top: 20px;  
     padding: 10px;
     text-align: center;
     background-color: #d24d57;
@@ -252,7 +268,7 @@ body {
         border: 1px solid white;
         letter-spacing: 1px;
     }
-    .email{
+    .email{  
         font-size: 18px;
     }
 }
@@ -271,4 +287,4 @@ footer{
     }
 }
 
-// #d24d57
+// #d24d57@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');font
