@@ -90,7 +90,7 @@ class App extends Component {
                 <div className="heroHeader">
                   <img className="heroLogo" src={logo2} alt="" />
                 </div>
-                <h1 className="heroName">KEVIN SHERRELL</h1>
+                <h1 className="heroName">Kevin Sherrell</h1>
                 <h2 className="heroSubTitle">
                   Full Stack Javascript Developer
                 </h2>
