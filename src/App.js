@@ -84,12 +84,10 @@ class App extends Component {
             </div>
           </header>
 
-          <section style={{ backgroundAttachment: "fixed" }} className="hero">
+          <section style={{ backgroundAttachment: "fixed" }} className="hero flex">
             <div className="container">
               <div className="heroContainer">
-                <div className="heroHeader">
-                  <img className="heroLogo" src={logo2} alt="" />
-                </div>
+                
                 <h1 className="heroName">Kevin Sherrell</h1>
                 <h2 className="heroSubTitle">
                   Full Stack Javascript Developer

@@ -50,12 +50,12 @@ h4 {
   transition: all ease-in-out 200ms;
   z-index: 3;
   float: right;
-  .logo{
+  .logo {
     filter: invert(100%);
   }
-  li{
-    color: black;    
-  } 
+  li {
+    color: black;
+  }
 }
 .scrolledButton {
   display: block;
@@ -67,9 +67,7 @@ h4 {
   transition: all ease-in 250ms;
 }
 .pageHeader {
-  position: fixed;
-  top: 0;  
-  width: 100%;  
+  width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
   -webkit-transition: all ease-in 200ms;
@@ -113,6 +111,7 @@ h4 {
   min-height: 350px;
   color: white;
   text-align: center;
+  align-items: center;
   .heroContainer {
     width: 90%;
     margin: 0 auto;
@@ -121,8 +120,7 @@ h4 {
   .heroLogo {
     width: 100px;
     opacity: 0.5;
-    margin-top: 15%;  
-    // margin-right: 10px;
+    margin-top: 15%;
     img {
       width: 100%;
     }
@@ -130,7 +128,7 @@ h4 {
   .heroName {
     margin-top: 20px;
     font-family: "Great Vibes", sans-serif;
-    font-size: 45px;      
+    font-size: 45px;
     font-weight: 300;
     letter-spacing: 3px;
     color: rgba(255, 255, 255, 1);
