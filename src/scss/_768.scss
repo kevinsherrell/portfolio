@@ -1,22 +1,71 @@
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   //    Header
+  .scrolled {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    -webkit-transition: all ease-in 200ms;
+    transition: all ease-in-out 200ms;
+    z-index: 3;
+    float: right;
+    background-color: white;
+    .logo{
+      filter: invert(100%);
+    }
+    li{
+      color: black;    
+    } 
+  }
+  .scrolledButton{
+      display: none;    
+  }
+.pageHeader{
+    .headerLogoContainer{
+        display: initial;
+    }
+    .logo{
+        width: 62px;     
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;  
+        .hamburgerButton{
+            display: none;      
+        }
+        .nonMobileNav{
+            display: initial;
+            color: white;  
+            // float: right;  
+            align-self: flex-end;
+            padding: 10px;
+            font-size: 14px;
+            li{
+                display: inline-block;  
+                padding-left: 10px;
+            }
+        }
+    }
+    
+}
 //   hero
 .hero{
   .heroLogo{
-      margin-top: 0;
-      width: 130px;
+    //   margin-top: 0;
+      width: 110px;
   }
     button{
         width: 30%;
         padding: 10px;
+        transition: $primary-transition;
     }
     .heroName{
         font-size: 62px;
+        transition: $primary-transition;    
     }
 }
   // projects
   .projectDescription {
-    width: 100%;
+    width: 100%;  
     button {
       padding: 10px;
       width: 49%;

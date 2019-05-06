@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,900");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i");
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes");
+
+$primary-transition: all ease-in 250ms;
 
 * {
   text-decoration: none;
@@ -45,9 +47,15 @@ h4 {
   position: fixed;
   top: 0;
   -webkit-transition: all ease-in 200ms;
-  transition: all ease-in 200ms;
+  transition: all ease-in-out 200ms;
   z-index: 3;
   float: right;
+  .logo{
+    filter: invert(100%);
+  }
+  li{
+    color: black;    
+  } 
 }
 .scrolledButton {
   display: block;
@@ -59,6 +67,9 @@ h4 {
   transition: all ease-in 250ms;
 }
 .pageHeader {
+  position: fixed;
+  top: 0;  
+  width: 100%;  
   padding-top: 5px;
   padding-bottom: 5px;
   -webkit-transition: all ease-in 200ms;
@@ -81,7 +92,8 @@ h4 {
       display: block;
       float: right;
       border: none;
-      border-radius: 0%;
+      border-radius: 0;
+      transition: $primary-transition;
       background-color: rgba(67, 162, 201, 0);
     }
     .hamburger {
@@ -96,8 +108,9 @@ h4 {
 
 // HERO
 .hero {
+  // padding-top: 62px;
   padding-bottom: 20px;
-  min-height: 350px;;  
+  min-height: 350px;
   color: white;
   text-align: center;
   .heroContainer {
@@ -108,7 +121,7 @@ h4 {
   .heroLogo {
     width: 100px;
     opacity: 0.5;
-    margin-top: 12%;
+    margin-top: 15%;  
     // margin-right: 10px;
     img {
       width: 100%;
@@ -117,14 +130,14 @@ h4 {
   .heroName {
     margin-top: 20px;
     font-family: "Great Vibes", sans-serif;
-    font-size: 30px;
+    font-size: 45px;      
     font-weight: 300;
-    letter-spacing: 3px;  
+    letter-spacing: 3px;
     color: rgba(255, 255, 255, 1);
   }
   .heroSubTitle {
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 10px;
@@ -170,11 +183,14 @@ h4 {
 .skills {
   margin-top: 10px;
   text-align: center;
+  background-color: rgb(248, 248, 248);
   .aboutMe {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 20px;
+    font-family: Georgia;
     font-size: 18px;
+
     span {
       color: palevioletred;
     }
@@ -184,7 +200,7 @@ h4 {
     text-align: center;
     font-size: 25px;
     padding: 10px 0;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 1);
   }
   .skillsListNonMobile {
     display: none;
@@ -227,7 +243,7 @@ h4 {
 h2 {
   font-family: "Lato";
   text-align: center;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 1);
 }
 .projectImage {
   width: 100%;
@@ -258,10 +274,12 @@ h2 {
   background-color: #d24d57;
   color: white;
   .thankYou {
+    font-family: Georgia;
+
     margin-bottom: 15px;
   }
   span {
-    font-size: 25px;
+    font-size: 30px;
   }
   .contactGitHub,
   .contactLinkedIn {
@@ -295,4 +313,5 @@ footer {
   }
 }
 
+@import "_414";
 @import "_768";

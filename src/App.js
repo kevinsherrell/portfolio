@@ -68,9 +68,9 @@ class App extends Component {
               <nav>
                 {/* hidden for mobile */}
                 <ul className="nonMobileNav">
-                  <li>SKILLS</li>
+                  <li>ABOUT/SKILLS</li>
                   <li>PROJECTS</li>
-                  <li>ABOUT/CONTACT</li>
+                  <li>CONTACT</li>
                 </ul>
                 {/* mobile */}
 
