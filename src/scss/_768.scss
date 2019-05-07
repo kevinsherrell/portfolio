@@ -40,7 +40,6 @@
       .nonMobileNav {
         display: initial;
         color: white;
-        // float: right;
         align-self: flex-end;
         padding: 10px;
         font-size: 14px;
@@ -89,7 +88,6 @@
 
   .skillsGrid {
     width: 50%;
-  
   }
   .skills {
     .container {
@@ -107,40 +105,39 @@
       h3 {
         padding: 0;
         font-size: 50px;
-        margin-bottom: 40px;  
-        
+        margin-bottom: 40px;
       }
     }
   }
   // projects
   .projects {
-      font-size: 20px;
-      margin-top: 60px;  
-      h2{
-          font-size: 50px;
-      }
+    font-size: 20px;
+    margin-top: 60px;
+    h2 {
+      font-size: 50px;
+    }
     .container {
       width: 80%;
     }
-    .projectDescription{
-        font-size: 25px;  
-        h3{
-            font-size: 30px;
-        }
+    .projectDescription {
+      font-size: 25px;
+      h3 {
+        font-size: 30px;
+      }
     }
   }
   .contact {
     .container {
       width: 80%;
     }
-    .thankYou{
-        font-size: 25px;    
-        span{
-            font-size: 40px;
-        }
+    .thankYou {
+      font-size: 25px;
+      span {
+        font-size: 40px;
+      }
     }
-    .email{
-        font-size: 30px;
+    .email {
+      font-size: 30px;
     }
   }
 }

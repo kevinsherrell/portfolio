@@ -1,0 +1,45 @@
+@media only screen and (min-width: 1024px) {
+  // hero
+  .hero {
+    min-height: 450px;
+  }
+//   skills
+.skillsGrid {
+    width: 40%;  
+  }
+  .projects {
+    .projectDescription {
+      .container {
+        display: flex;
+        align-items: center;
+        margin-top: 70px;
+        margin-bottom: 20px;
+
+        .projectInfo {
+          width: 50%;
+        }
+        .projectImage {
+          width: 50%;
+          text-align: right;
+          img {
+            width: 300px;
+            padding: 10px 0;
+          }
+        }
+      }
+      &:nth-child(odd) {
+        .container {
+          flex-direction: row-reverse;
+          .projectImage {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .contact{
+      .container{
+          width: 70%;
+      }
+  }
+}

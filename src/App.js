@@ -111,7 +111,7 @@ class App extends Component {
           <div className=" container">
             <div className="aboutMe">
               <h3>ABOUT ME</h3>
-              <p >
+              <p>
                 I am a full stack Javascript developer based in the St. Louis
                 metropolitan area. I love to learn new things and I am always
                 challenging myself.{" "}
@@ -237,57 +237,77 @@ class App extends Component {
         </section>
 
         <section className="projects">
-          <div className="container">
-            <div className="projectsHeader">
-              <h2>PROJECTS</h2>
-            </div>
+          <div className="projectsHeader">
+            <h2>PROJECTS</h2>
+          </div>
 
-            <div className="projectDescription">
-              <h3>notFacebook</h3>
-              <p>A full stack replica of facebook.</p>
-              <p>
-                React, Redux, MongoDb, Express, Node, Passport.js (jwt
-                strategy), Sass
-              </p>
+          <div className="projectDescription">
+            <div className="container">
+              <div className="projectInfo">
+                <h3>notFacebook</h3>
+                <p>A full stack replica of facebook.</p>
+                <p>
+                  React, Redux, MongoDb, Express, Node, Passport.js (jwt
+                  strategy), Sass
+                </p>
+                <button className="projectLive">View Project</button>
+                <button className="projectGithub">Github</button>
+              </div>
               <div className="projectImage">
                 <img src={notFacebookImage} alt="" />
               </div>
-              <button className="projectLive">View Project</button>
-              <button className="projectGithub">Github</button>
             </div>
-            <div className="projectDescription">
-              <h3>Project Title</h3>
-
-              <p> project 2 description</p>
-              <p>technologies</p>
-              <div className="projectImage">
-                <img src={notFacebookImage} alt="" />
-              </div>
-              <button className="projectLive">View Project</button>
-              <button className="projectGithub">Github</button>
+          </div>
+          <div className="projectDescription">
+            <div className='container'>
+                <div className="projectInfo">
+                  <h3>notFacebook</h3>
+                  <p>A full stack replica of facebook.</p>
+                  <p>
+                    React, Redux, MongoDb, Express, Node, Passport.js (jwt
+                    strategy), Sass
+                  </p>
+                  <button className="projectLive">View Project</button>
+                  <button className="projectGithub">Github</button>
+                </div>
+                <div className="projectImage">
+                  <img src={notFacebookImage} alt="" />
+                </div>
             </div>
-            <div className="projectDescription">
-              <h3>Project Title</h3>
-
-              <p>project 3 description</p>
-              <p>technologies</p>
-              <div className="projectImage">
-                <img src={notFacebookImage} alt="" />
-              </div>
-              <button className="projectLive">View Project</button>
-              <button className="projectGithub">Github</button>
+          </div>
+          <div className="projectDescription">
+            <div className='container'>
+                <div className="projectInfo">
+                  <h3>notFacebook</h3>
+                  <p>A full stack replica of facebook.</p>
+                  <p>
+                    React, Redux, MongoDb, Express, Node, Passport.js (jwt
+                    strategy), Sass
+                  </p>
+                  <button className="projectLive">View Project</button>
+                  <button className="projectGithub">Github</button>
+                </div>
+                <div className="projectImage">
+                  <img src={notFacebookImage} alt="" />
+                </div>
             </div>
-            <div className="projectDescription">
-              <h3>Project Title</h3>
-
-              <p>project 4 description</p>
-              <p>tehcnologies</p>
-              <div className="projectImage">
-                <img src={notFacebookImage} alt="" />
-              </div>
-              <button className="projectLive">View Project</button>
-              <button className="projectGithub">Github</button>
-            </div>
+          </div>
+          <div className="projectDescription">
+           <div className='container'>
+                <div className="projectInfo">
+                  <h3>notFacebook</h3>
+                  <p>A full stack replica of facebook.</p>
+                  <p>
+                    React, Redux, MongoDb, Express, Node, Passport.js (jwt
+                    strategy), Sass
+                  </p>
+                  <button className="projectLive">View Project</button>
+                  <button className="projectGithub">Github</button>
+                </div>
+                <div className="projectImage">
+                  <img src={notFacebookImage} alt="" />
+                </div>
+           </div>
           </div>
         </section>
 

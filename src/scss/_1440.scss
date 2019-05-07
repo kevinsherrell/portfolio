@@ -1,0 +1,30 @@
+@media only screen and (min-width: 1440px){
+    .container{
+        width: 50%;
+    }
+.pageHeader{
+    .container{
+        width: 60%;
+    }
+}
+.skills{
+    .container{
+        width: 50%; 
+    }
+}
+.projectDescription{
+    .container{
+        width: 60%;
+    }
+}
+.contact{
+    .container{
+        width: 60%;
+        button{
+            display: inline-block;  
+            width: 49%;
+            margin-right: 5px;
+        }
+    }
+}
+}
