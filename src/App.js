@@ -84,10 +84,12 @@ class App extends Component {
             </div>
           </header>
 
-          <section style={{ backgroundAttachment: "fixed" }} className="hero flex">
+          <section
+            style={{ backgroundAttachment: "fixed" }}
+            className="hero flex"
+          >
             <div className="container">
               <div className="heroContainer">
-                
                 <h1 className="heroName">Kevin Sherrell</h1>
                 <h2 className="heroSubTitle">
                   Full Stack Javascript Developer
@@ -105,77 +107,82 @@ class App extends Component {
           {/* <h2>SKILLS</h2> */}
 
           {/* mobile only */}
-          <h3>ABOUT ME</h3>
-          <p className="aboutMe">
-            I am a full stack Javascript developer based in the St. Louis
-            metropolitan area. I love to learn new things and I am always
-            challenging myself.{" "}
-            <span>
-              Currently I am proficient in the following tehcnologies:
-            </span>{" "}
-          </p>
-          <div className="skillsGrid">
-            <div className="html5">
-              <div className="skillsContainer ">
-                <img src={html5} alt="" />
-                <p>HTML5</p>
-              </div>
-            </div>
-            <div className="css3">
-              <div className="skillsContainer">
-                <img src={css3} alt="" />
-                <p>CSS3</p>
-              </div>
-            </div>
-            <div className="bootstrap">
-              <div className="skillsContainer">
-                <img src={bootstrap} alt="" />
-                <p>BOOTSTRAP</p>
-              </div>
-            </div>
-            <div className="javascript">
-              <div className="skillsContainer">
-                <img src={javascript} alt="" />
-                <p>JAVASCRIPT</p>
-              </div>
-            </div>
-            <div className="mongo">
-              <div className="skillsContainer">
-                <img src={mongo} alt="" />
-                <p>MONGODB</p>
-              </div>
-            </div>
 
-            <div className="express">
-              <div className="skillsContainer">
-                <img src={express} alt="" />
-                <p>EXPRESS.JS</p>
-              </div>
+          <div className=" container">
+            <div className="aboutMe">
+              <h3>ABOUT ME</h3>
+              <p >
+                I am a full stack Javascript developer based in the St. Louis
+                metropolitan area. I love to learn new things and I am always
+                challenging myself.{" "}
+                <span>
+                  Currently I am proficient in the following tehcnologies:
+                </span>{" "}
+              </p>
             </div>
+            <div className="skillsGrid">
+              <div className="html5">
+                <div className="skillsContainer ">
+                  <img src={html5} alt="" />
+                  <p>HTML5</p>
+                </div>
+              </div>
+              <div className="css3">
+                <div className="skillsContainer">
+                  <img src={css3} alt="" />
+                  <p>CSS3</p>
+                </div>
+              </div>
+              <div className="bootstrap">
+                <div className="skillsContainer">
+                  <img src={bootstrap} alt="" />
+                  <p>BOOTSTRAP</p>
+                </div>
+              </div>
+              <div className="javascript">
+                <div className="skillsContainer">
+                  <img src={javascript} alt="" />
+                  <p>JAVASCRIPT</p>
+                </div>
+              </div>
+              <div className="mongo">
+                <div className="skillsContainer">
+                  <img src={mongo} alt="" />
+                  <p>MONGODB</p>
+                </div>
+              </div>
 
-            <div className="react">
-              <div className="skillsContainer">
-                <img src={react} alt="" />
-                <p>REACT.JS</p>
+              <div className="express">
+                <div className="skillsContainer">
+                  <img src={express} alt="" />
+                  <p>EXPRESS.JS</p>
+                </div>
               </div>
-            </div>
 
-            <div className="redux">
-              <div className="skillsContainer">
-                <img src={redux} alt="" />
-                <p>REDUX</p>
+              <div className="react">
+                <div className="skillsContainer">
+                  <img src={react} alt="" />
+                  <p>REACT.JS</p>
+                </div>
               </div>
-            </div>
-            <div className="node">
-              <div className="skillsContainer">
-                <img src={node} alt="" />
-                <p>NODE.JS</p>
+
+              <div className="redux">
+                <div className="skillsContainer">
+                  <img src={redux} alt="" />
+                  <p>REDUX</p>
+                </div>
               </div>
-            </div>
-            <div className="git">
-              <div className="skillsContainer">
-                <img src={git} alt="" />
-                <p>GIT</p>
+              <div className="node">
+                <div className="skillsContainer">
+                  <img src={node} alt="" />
+                  <p>NODE.JS</p>
+                </div>
+              </div>
+              <div className="git">
+                <div className="skillsContainer">
+                  <img src={git} alt="" />
+                  <p>GIT</p>
+                </div>
               </div>
             </div>
           </div>

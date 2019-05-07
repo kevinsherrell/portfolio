@@ -145,34 +145,42 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr;
   width: 90%;
   margin: 0 auto;
-  padding: 15px 0 15px 0;
+  padding: 0 0 15px 0;
   text-align: center; }
 
 .skills {
-  margin-top: 10px;
   text-align: center;
   background-color: #f8f8f8; }
   .skills .aboutMe {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 20px;
-    font-family: Georgia;
     font-size: 18px; }
+    .skills .aboutMe p {
+      font-family: Georgia;
+      padding-top: 10px; }
     .skills .aboutMe span {
-      color: palevioletred; }
+      color: #d24d57; }
   .skills h3 {
     height: 60px;
     text-align: center;
     font-size: 25px;
-    padding: 10px 0;
+    padding-top: 10px;
     color: black; }
+    .skills h3:after {
+      content: '';
+      display: block;
+      width: 30%;
+      margin: 0 auto;
+      border: 1px solid rgba(210, 77, 87, 0.2);
+      margin-top: 10px; }
   .skills .skillsListNonMobile {
     display: none; }
   .skills .skillsContainer p {
     text-align: center;
     color: rgba(0, 0, 0, 0.5); }
   .skills .skillsContainer img {
-    width: 50%; }
+    width: 70px; }
   .skills .git {
     -ms-grid-column: 2;
     grid-column-start: 2; }
@@ -195,11 +203,18 @@ h4 {
 
 .projectsHeader {
   margin-bottom: 20px; }
+  .projectsHeader:after {
+    content: '';
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid rgba(210, 77, 87, 0.2); }
 
 h2 {
   font-family: "Lato";
   text-align: center;
-  color: black; }
+  color: black;
+  padding-bottom: 15px; }
 
 .projectImage {
   width: 100%; }
@@ -272,13 +287,16 @@ footer {
     transition: all ease-in-out 200ms;
     z-index: 3;
     float: right;
-    background-color: white; }
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
     .scrolled .logo {
       filter: invert(100%); }
     .scrolled li {
       color: black; }
   .scrolledButton {
     display: none; }
+  .pageHeader .container {
+    width: 80%; }
   .pageHeader .headerLogoContainer {
     display: initial; }
   .pageHeader .logo {
@@ -319,4 +337,36 @@ footer {
       border: 1px solid #d24d57;
       border-radius: 5px; }
     .projectDescription .projectLive {
-      margin-right: 5px; } }
+      margin-right: 5px; }
+  .skillsGrid {
+    width: 50%; }
+  .skills .container {
+    width: 80%;
+    padding-top: 15px; }
+  .skills .aboutMe {
+    text-align: center;
+    line-height: 1.7;
+    font-size: 20px; }
+    .skills .aboutMe h3 {
+      padding: 0;
+      font-size: 50px;
+      margin-bottom: 40px; }
+  .projects {
+    font-size: 20px;
+    margin-top: 60px; }
+    .projects h2 {
+      font-size: 50px; }
+    .projects .container {
+      width: 80%; }
+    .projects .projectDescription {
+      font-size: 25px; }
+      .projects .projectDescription h3 {
+        font-size: 30px; }
+  .contact .container {
+    width: 80%; }
+  .contact .thankYou {
+    font-size: 25px; }
+    .contact .thankYou span {
+      font-size: 40px; }
+  .contact .email {
+    font-size: 30px; } }

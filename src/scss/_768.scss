@@ -9,63 +9,67 @@
     z-index: 3;
     float: right;
     background-color: white;
-    .logo{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+    .logo {
       filter: invert(100%);
     }
-    li{
-      color: black;    
-    } 
+    li {
+      color: black;
+    }
   }
-  .scrolledButton{
-      display: none;    
+  .scrolledButton {
+    display: none;
   }
-.pageHeader{
-    .headerLogoContainer{
+  .pageHeader {
+    .container {
+      width: 80%;
+    }
+    .headerLogoContainer {
+      display: initial;
+    }
+    .logo {
+      width: 62px;
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      .hamburgerButton {
+        display: none;
+      }
+      .nonMobileNav {
         display: initial;
-    }
-    .logo{
-        width: 62px;     
-    }
-    nav{
-        display: flex;
-        justify-content: flex-end;  
-        .hamburgerButton{
-            display: none;      
-        }
-        .nonMobileNav{
-            display: initial;
-            color: white;  
-            // float: right;  
-            align-self: flex-end;
-            padding: 10px;
-            font-size: 14px;
-            li{
-                display: inline-block;  
-                padding-left: 10px;
-            }
-        }
-    }
-    
-}
-//   hero
-.hero{
-  .heroLogo{
-    //   margin-top: 0;
-      width: 110px;
-  }
-    button{
-        width: 30%;
+        color: white;
+        // float: right;
+        align-self: flex-end;
         padding: 10px;
-        transition: $primary-transition;
+        font-size: 14px;
+        li {
+          display: inline-block;
+          padding-left: 10px;
+        }
+      }
     }
-    .heroName{
-        font-size: 62px;
-        transition: $primary-transition;    
+  }
+  //   hero
+  .hero {
+    .heroLogo {
+      //   margin-top: 0;
+      width: 110px;
     }
-}
+    button {
+      width: 30%;
+      padding: 10px;
+      transition: $primary-transition;
+    }
+    .heroName {
+      font-size: 62px;
+      transition: $primary-transition;
+    }
+  }
   // projects
   .projectDescription {
-    width: 100%;  
+    width: 100%;
     button {
       padding: 10px;
       width: 49%;
@@ -77,9 +81,66 @@
       border: 1px solid #d24d57;
       border-radius: 5px;
     }
-    .projectLive{
-        margin-right: 5px;
+    .projectLive {
+      margin-right: 5px;
     }
   }
+  // skills
 
+  .skillsGrid {
+    width: 50%;
+  
+  }
+  .skills {
+    .container {
+      // display: flex;
+      width: 80%;
+      padding-top: 15px;
+    }
+
+    .aboutMe {
+      // align-self: center;
+      // width: 50%;
+      text-align: center;
+      line-height: 1.7;
+      font-size: 20px;
+      h3 {
+        padding: 0;
+        font-size: 50px;
+        margin-bottom: 40px;  
+        
+      }
+    }
+  }
+  // projects
+  .projects {
+      font-size: 20px;
+      margin-top: 60px;  
+      h2{
+          font-size: 50px;
+      }
+    .container {
+      width: 80%;
+    }
+    .projectDescription{
+        font-size: 25px;  
+        h3{
+            font-size: 30px;
+        }
+    }
+  }
+  .contact {
+    .container {
+      width: 80%;
+    }
+    .thankYou{
+        font-size: 25px;    
+        span{
+            font-size: 40px;
+        }
+    }
+    .email{
+        font-size: 30px;
+    }
+  }
 }
