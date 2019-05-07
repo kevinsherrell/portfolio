@@ -160,7 +160,8 @@ h4 {
     border: none;
     border: 1px solid white;
     border-radius: 5px;
-    background-color: rgba(67, 162, 201, 0);
+    background-color: rgba(176, 42, 53, 0.5);
+    // background-color: rgba(67, 162, 201, 1);
     color: white;
     padding: 5px;
     margin-right: 5px;
@@ -286,8 +287,8 @@ h2 {
   margin-top: 20px;
   padding: 10px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);  
-  color: white;
+  // background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   .thankYou {
     font-family: Georgia;
     margin-bottom: 15px;
@@ -298,17 +299,19 @@ h2 {
   }
   .contactGitHub,
   .contactLinkedIn {
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
     padding: 15px;
-    width: 100%;
+    max-width: 300px;
     font-size: 20px;
-    background-color: rgba(210, 77, 87, 1);
+    background-color: transparent;
     color: white;
     border: none;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     letter-spacing: 1px;
+    img {
+      width: 100%;
+    }
   }
   .email {
     font-size: 20px;

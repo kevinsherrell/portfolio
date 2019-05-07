@@ -15,6 +15,8 @@ import git from "./git-plain.svg";
 import javascript from "./javascript-plain.svg";
 import skillBackgrondImage from "./skillbackground.svg";
 import notFacebookImage from "./notfacebook.PNG";
+import gitHub from './github-original.svg'
+import linkedIn from './linkedin-plain.svg'
 // css
 import "./css/styles.css";
 
@@ -319,8 +321,8 @@ class App extends Component {
               feedback on my code, my info is below!
             </p>
             <p className="email">kevinsherrell@ksherrell.com</p>
-            <button className="contactGitHub">GitHub</button>
-            <button className="contactLinkedIn">LikedIn</button>
+            <button className="contactGitHub"><img src={gitHub} alt=""/></button>
+            <button className="contactLinkedIn"><img src={linkedIn} alt=""/></button>
           </div>
         </section>
         <footer>
