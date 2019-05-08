@@ -17,15 +17,15 @@ $primary-transition: all ease-in 250ms;
 body {
   color: rgba(0, 0, 0, 0.7);
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
-button{
-  &:hover{
+button {
+  &:hover {
     cursor: pointer;
   }
 }
@@ -115,23 +115,46 @@ h4 {
     }
   }
 }
-.mobileMenu{
+.mobileMenu {
   position: fixed;
   top: -1000px;
   transition: all 600ms;
   background-color: rgba(176, 42, 53, 1);
   width: 100vw;
-  height: 30vh;
-  ul{
-    padding-top: 10px;  
+  // height: 50vh;
+  text-align: center;
+  color: white;
+  .container {
+    width: 80%;
+  }
+  .close {
+    font-size: 30px;
+    text-align: center;
+  }
+  ul {
+    padding-top: 40px;
     color: white;
     font-size: 30px;
-    text-align: center;  
+    text-align: center;
+
+    li {
+      padding-bottom: 20px;
+    }
+  }
+  .menuName {
+    font-family: "Great Vibes";
+    font-size: 50px;
+    padding-top: 13%;
+  }
+  .menuSubtitle {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    padding-bottom: 10%;
   }
 }
-.menuClicked{
+.menuClicked {
   top: 0px;
-  transition: all  600ms;
+  transition: all 600ms;
   z-index: 4;
 }
 // main styles
@@ -195,7 +218,7 @@ h4 {
     color: white;
     padding: 5px;
     margin-right: 5px;
-    &:hover{
+    &:hover {
       background-color: white;
       color: rgba(176, 42, 53, 0.5);
     }
@@ -314,8 +337,8 @@ h2 {
     color: #d24d57;
     border: 1px solid #d24d57;
     border-radius: 5px;
-    &:hover{
-      background-color: rgba(176, 42, 53, .8);
+    &:hover {
+      background-color: rgba(176, 42, 53, 0.8);
       color: white;
     }
   }

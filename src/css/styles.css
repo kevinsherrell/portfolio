@@ -103,16 +103,32 @@ h4 {
   transition: all 600ms;
   background-color: #b02a35;
   width: 100vw;
-  height: 30vh; }
+  text-align: center;
+  color: white; }
+  .mobileMenu .container {
+    width: 80%; }
+  .mobileMenu .close {
+    font-size: 30px;
+    text-align: center; }
   .mobileMenu ul {
-    padding-top: 10px;
+    padding-top: 40px;
     color: white;
     font-size: 30px;
     text-align: center; }
+    .mobileMenu ul li {
+      padding-bottom: 20px; }
+  .mobileMenu .menuName {
+    font-family: "Great Vibes";
+    font-size: 50px;
+    padding-top: 13%; }
+  .mobileMenu .menuSubtitle {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    padding-bottom: 10%; }
 
 .menuClicked {
   top: 0px;
-  transition: all  600ms;
+  transition: all 600ms;
   z-index: 4; }
 
 .hero {
@@ -385,6 +401,8 @@ footer {
         transition: all ease-in-out 250ms;
         border-top: 5px solid #d24d57; }
   .scrolledButton {
+    display: none; }
+  .mobileMenu {
     display: none; }
   .hero .heroLogo {
     width: 110px; }

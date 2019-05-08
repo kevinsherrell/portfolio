@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { browserHistory } from "react-router";
 import Scrollchor from "react-scrollchor";
 
-import {Link, animateScroll as scroll} from 'react-scroll'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import Hero from "./Hero";
 
@@ -14,19 +14,19 @@ class Header extends Component {
   state = {
     menuClicked: false
   };
- handleClick=()=>{
-   this.setState({
-     menuClicked: !this.state.menuClicked
-   })
-   console.log('working')
-   document.getElementById('menu')
-   console.log(document.getElementById('menu').offsetTop)
- }
- exitMenu=()=>{
-   this.setState({
-     menuClicked: !this.state.menuClicked
-   })
- }
+  handleClick = () => {
+    this.setState({
+      menuClicked: !this.state.menuClicked
+    });
+    console.log("working");
+    document.getElementById("menu");
+    console.log(document.getElementById("menu").offsetTop);
+  };
+  exitMenu = () => {
+    this.setState({
+      menuClicked: !this.state.menuClicked
+    });
+  };
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
   }
@@ -43,8 +43,13 @@ class Header extends Component {
       this.hamburgerButton.classList.remove("scrolledButton");
       this.hamburgerButton.classList.add("hamburgerButton");
     }
+    if (this.state.menuClicked === true) {
+      this.setState({
+        menuClicked: !this.state.menuClicked
+      });
+    }
   };
-
+  menuScrollOut = e => {};
   render() {
     const backgroundImage = require("./background.jpg");
     const backgroundStyles = {
@@ -78,43 +83,52 @@ class Header extends Component {
               {/* hidden for mobile */}
               <ul className="nonMobileNav">
                 <li>
-                  <Link 
-                  activeClass='activeHome'
-                  to='home'
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}>HOME</Link>
-                </li>
-                <li>
-                  <Link 
-                  activeClass='active'
-                  to='skills'
-                  spy={true}
-                  smooth={true}
-                  offset={-110}
-                  duration={500}
-                  >ABOUT/SKILLS</Link>
+                  <Link
+                    activeClass="activeHome"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                  >
+                    HOME
+                  </Link>
                 </li>
                 <li>
                   <Link
-                  activeClass='active'
-                  to='projects'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                   >PROJECTS</Link>
+                    activeClass="active"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={-110}
+                    duration={500}
+                  >
+                    ABOUT/SKILLS
+                  </Link>
                 </li>
                 <li>
                   <Link
-                  activeClass='active'
-                  to='contact'
-                  spy={true}
-                  smooth={true}
-                  offset={-42}
-                  duration={500}
-                  >CONTACT</Link>
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    PROJECTS
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-42}
+                    duration={500}
+                  >
+                    CONTACT
+                  </Link>
                 </li>
               </ul>
               {/* <ul className="nonMobileNav">
@@ -136,7 +150,8 @@ class Header extends Component {
               <button
                 className="hamburgerButton"
                 ref={button => (this.hamburgerButton = button)}
-              onClick={this.handleClick}>
+                onClick={this.handleClick}
+              >
                 <img className="hamburger" src={hamburger} alt="" />
               </button>
             </nav>
@@ -145,52 +160,75 @@ class Header extends Component {
 
         <Hero />
         {/* opens only when hamburger is clicked */}
-        <div className={this.state.menuClicked === false ? "mobileMenu" : 'mobileMenu menuClicked' } id='menu'>
-        <ul>
-                <li>
-                  <Link 
-                  activeClass='activeHome'
-                  to='home'
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}
-                  onClick={this.exitMenu}>HOME</Link>
-                </li>
-                <li>
-                  <Link 
-                  activeClass='active'
-                  to='skills'
-                  spy={true}
-                  smooth={true}
-                  offset={-110}
-                  duration={500}
-                  onClick={this.exitMenu}
-                  >ABOUT/SKILLS</Link>
-                </li>
-                <li>
-                  <Link
-                  activeClass='active'
-                  to='projects'
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  onClick={this.exitMenu}
-                   >PROJECTS</Link>
-                </li>
-                <li>
-                  <Link
-                  activeClass='active'
-                  to='contact'
-                  spy={true}
-                  smooth={true}
-                  offset={-42}
-                  duration={500}
-                  onClick={this.exitMenu}
-                  >CONTACT</Link>
-                </li>
-              </ul>
+        <div
+          className={
+            this.state.menuClicked === false
+              ? "mobileMenu"
+              : "mobileMenu menuClicked"
+          }
+          id="menu"
+        >
+          <div className="close container">
+            <span onClick={this.handleClick}>
+              <i className="fas fa-times" />
+            </span>
+          </div>
+          <ul>
+            <li>
+              <Link
+                activeClass="activeHome"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                onClick={this.exitMenu}
+              >
+                HOME
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-110}
+                duration={500}
+                onClick={this.exitMenu}
+              >
+                ABOUT/SKILLS
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={this.exitMenu}
+              >
+                PROJECTS
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-42}
+                duration={500}
+                onClick={this.exitMenu}
+              >
+                CONTACT
+              </Link>
+            </li>
+          </ul>
+          <p className="menuName">Kevin Sherrell</p>
+          <p className="menuSubtitle">Full Stack Javascript Developer</p>
         </div>
       </div>
     );
