@@ -22,6 +22,11 @@ class Header extends Component {
    document.getElementById('menu')
    console.log(document.getElementById('menu').offsetTop)
  }
+ exitMenu=()=>{
+   this.setState({
+     menuClicked: !this.state.menuClicked
+   })
+ }
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
   }
@@ -149,7 +154,8 @@ class Header extends Component {
                   spy={true}
                   smooth={true}
                   offset={0}
-                  duration={500}>HOME</Link>
+                  duration={500}
+                  onClick={this.exitMenu}>HOME</Link>
                 </li>
                 <li>
                   <Link 
@@ -159,6 +165,7 @@ class Header extends Component {
                   smooth={true}
                   offset={-110}
                   duration={500}
+                  onClick={this.exitMenu}
                   >ABOUT/SKILLS</Link>
                 </li>
                 <li>
@@ -169,6 +176,7 @@ class Header extends Component {
                   smooth={true}
                   offset={-70}
                   duration={500}
+                  onClick={this.exitMenu}
                    >PROJECTS</Link>
                 </li>
                 <li>
@@ -179,11 +187,11 @@ class Header extends Component {
                   smooth={true}
                   offset={-42}
                   duration={500}
+                  onClick={this.exitMenu}
                   >CONTACT</Link>
                 </li>
               </ul>
         </div>
-        <div className="mobileMenuOverlay"></div>
       </div>
     );
   }
