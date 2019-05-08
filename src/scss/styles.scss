@@ -20,6 +20,14 @@ body {
 a{
   text-decoration: none;
   color: inherit;
+  &:hover{
+    cursor: pointer;
+  }
+}
+button{
+  &:hover{
+    cursor: pointer;
+  }
 }
 h1,
 h2,
@@ -107,6 +115,25 @@ h4 {
     }
   }
 }
+.mobileMenu{
+  position: fixed;
+  top: -1000px;
+  transition: all 600ms;
+  background-color: rgba(176, 42, 53, 1);
+  width: 100vw;
+  height: 30vh;
+  ul{
+    padding-top: 10px;  
+    color: white;
+    font-size: 30px;
+    text-align: center;  
+  }
+}
+.menuClicked{
+  top: 0px;
+  transition: all  600ms;
+  z-index: 4;
+}
 // main styles
 
 // HERO
@@ -165,10 +192,13 @@ h4 {
     border: 1px solid white;
     border-radius: 5px;
     background-color: rgba(176, 42, 53, 0.5);
-    // background-color: rgba(67, 162, 201, 1);
     color: white;
     padding: 5px;
     margin-right: 5px;
+    &:hover{
+      background-color: white;
+      color: rgba(176, 42, 53, 0.5);
+    }
   }
 }
 // Skills/About
@@ -284,6 +314,10 @@ h2 {
     color: #d24d57;
     border: 1px solid #d24d57;
     border-radius: 5px;
+    &:hover{
+      background-color: rgba(176, 42, 53, .8);
+      color: white;
+    }
   }
 }
 // CONTACT

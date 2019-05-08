@@ -1,4 +1,6 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 const Hero = () => {
   return (
     <section style={{ backgroundAttachment: "fixed" }} className="hero flex">
@@ -8,7 +10,18 @@ const Hero = () => {
           <h2 className="heroSubTitle">Full Stack Javascript Developer</h2>
 
           <div className="heroButtons">
-            <button>My Projects</button>
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              {" "}
+              <button>My Projects</button>
+            </Link>
+
             <button>My Resume</button>
           </div>
         </div>

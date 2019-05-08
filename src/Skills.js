@@ -13,10 +13,12 @@ import javascript from "./javascript-plain.svg";
 
 class Skills extends Component {
   state = {  }
-
+componentDidMount(){
+  console.log(this.skills)
+}
   render() { 
     return (  
-      <section className="skills" id='skills'>
+      <section className="skills" id='skills'  ref={c => ({...this.skills} = c)}>
       {/* <h2>SKILLS</h2> */}
 
       {/* mobile only */}

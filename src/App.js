@@ -13,22 +13,21 @@ import "./css/styles.css";
 
 class App extends Component {
   state = {};
-  onClickScroll = () => {
-     console.log(this.props.history.location.hash)
-     .scrollIntoView()
-  };
+
+ 
   render() {
+    console.log(this.childRef)
     return (
       <React.Fragment>
-        <Header ref={c => (this.header = c)} onClickScroll={this.onClickScroll}/>
-        <Skills ref={c => (this.skills = c)} />
+        <Header ref={c => (this.header = c)} />
+        <Skills />
         <Projects ref={c => (this.projects = c)} />
         <Contact ref={c => (this.contact = c)} />
         <Footer />
         <Router>
-            <Route path='/#skills' component={Skills}/>
-            <Route path='/#contact' component={Contact}/>
-            <Route path='/#projects' component={Projects}/>
+          <Route path="/skills" component={Skills} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/projects" component={Projects} />
         </Router>
       </React.Fragment>
     );

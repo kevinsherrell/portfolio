@@ -17,6 +17,11 @@ body {
 a {
   text-decoration: none;
   color: inherit; }
+  a:hover {
+    cursor: pointer; }
+
+button:hover {
+  cursor: pointer; }
 
 h1,
 h2,
@@ -92,6 +97,24 @@ h4 {
       -webkit-filter: invert(100%);
       filter: invert(100%); }
 
+.mobileMenu {
+  position: fixed;
+  top: -1000px;
+  transition: all 600ms;
+  background-color: #b02a35;
+  width: 100vw;
+  height: 30vh; }
+  .mobileMenu ul {
+    padding-top: 10px;
+    color: white;
+    font-size: 30px;
+    text-align: center; }
+
+.menuClicked {
+  top: 0px;
+  transition: all  600ms;
+  z-index: 4; }
+
 .hero {
   padding-bottom: 20px;
   min-height: 350px;
@@ -141,6 +164,9 @@ h4 {
     color: white;
     padding: 5px;
     margin-right: 5px; }
+    .hero button:hover {
+      background-color: white;
+      color: rgba(176, 42, 53, 0.5); }
 
 .skillsGrid {
   display: -ms-grid;
@@ -238,6 +264,9 @@ h2 {
     color: #d24d57;
     border: 1px solid #d24d57;
     border-radius: 5px; }
+    .projectDescription button:hover {
+      background-color: rgba(176, 42, 53, 0.8);
+      color: white; }
 
 .contact {
   margin-top: 20px;
@@ -278,36 +307,24 @@ footer {
     width: 62px; }
 
 @media only screen and (min-width: 414px) {
-  .hero {
-    font-size: 20px; }
-    .hero .heroName {
-      font-size: 50px; }
+  .hero .heroName {
+    font-size: 50px; }
+  .hero button {
+    max-width: 199px; }
   .skillsGrid {
     width: 60%; } }
 
 @media only screen and (min-width: 768px) {
-  .scrolled {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    -webkit-transition: all ease-in 200ms;
-    transition: all ease-in-out 200ms;
-    z-index: 3;
-    float: right;
-    background-color: white;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-    .scrolled .logo {
-      filter: invert(100%); }
-    .scrolled li {
-      color: black; }
-  .scrolledButton {
-    display: none; }
   .pageHeader .container {
     width: 80%; }
   .pageHeader .headerLogoContainer {
-    display: initial; }
+    display: initial;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50%; }
   .pageHeader .logo {
-    width: 62px; }
+    width: 40px;
+    padding-top: 5px; }
   .pageHeader nav {
     display: flex;
     justify-content: flex-end; }
@@ -321,7 +338,54 @@ footer {
       font-size: 14px; }
       .pageHeader nav .nonMobileNav li {
         display: inline-block;
-        padding-left: 10px; }
+        margin-left: 10px;
+        text-align: center; }
+        .pageHeader nav .nonMobileNav li .activeHome {
+          border-bottom: 1px solid white; }
+        .pageHeader nav .nonMobileNav li:before {
+          content: '';
+          display: block;
+          height: 5px;
+          width: 0%;
+          transition: all ease-in-out 250ms;
+          border-top: 2px solid white; }
+        .pageHeader nav .nonMobileNav li:hover:before {
+          content: '';
+          display: block;
+          width: 100%;
+          transition: all ease-in-out 250ms;
+          border-top: 5px solid white; }
+  .scrolled {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    -webkit-transition: all ease-in 200ms;
+    transition: all ease-in-out 200ms;
+    z-index: 3;
+    float: right;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+    .scrolled .logo {
+      filter: invert(100%); }
+    .scrolled nav .nonMobileNav li {
+      color: black; }
+      .scrolled nav .nonMobileNav li .active {
+        border-bottom: 1px solid #d24d57; }
+      .scrolled nav .nonMobileNav li:before {
+        content: '';
+        display: block;
+        height: 5px;
+        width: 0%;
+        transition: all ease-in-out 250ms;
+        border-top: 2px solid #d24d57; }
+      .scrolled nav .nonMobileNav li:hover:before {
+        content: '';
+        display: block;
+        width: 100%;
+        transition: all ease-in-out 250ms;
+        border-top: 5px solid #d24d57; }
+  .scrolledButton {
+    display: none; }
   .hero .heroLogo {
     width: 110px; }
   .hero button {
@@ -369,14 +433,20 @@ footer {
       font-size: 25px; }
       .projects .projectDescription h3 {
         font-size: 30px; }
-  .contact .container {
-    width: 80%; }
-  .contact .thankYou {
-    font-size: 25px; }
-    .contact .thankYou span {
-      font-size: 40px; }
-  .contact .email {
-    font-size: 30px; } }
+  .contact {
+    margin-top: 150px;
+    margin-bottom: 150px; }
+    .contact .contactGitHub,
+    .contact .contactLinkedIn {
+      max-width: 100px; }
+    .contact .container {
+      width: 80%; }
+    .contact .thankYou {
+      font-size: 25px; }
+      .contact .thankYou span {
+        font-size: 40px; }
+    .contact .email {
+      font-size: 30px; } }
 
 @media only screen and (min-width: 1024px) {
   .hero {
@@ -408,8 +478,6 @@ footer {
     width: 50%; }
   .pageHeader .container {
     width: 60%; }
-  .hero button {
-    width: 25%; }
   .skills .container {
     width: 50%; }
   .projectDescription .container {
