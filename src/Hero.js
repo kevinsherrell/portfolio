@@ -19,10 +19,10 @@ const Hero = () => {
               duration={500}
             >
               {" "}
-              <button>My Projects</button>
+              <button>Projects</button>
             </Link>
 
-            <button>My Resume</button>
+            <button><span><i class="fas fa-download"></i></span> Resume</button>
           </div>
         </div>
       </div>

@@ -183,6 +183,8 @@ h4 {
     .hero button:hover {
       background-color: white;
       color: rgba(176, 42, 53, 0.5); }
+    .hero button span {
+      margin-right: 2px; }
 
 .skillsGrid {
   display: -ms-grid;

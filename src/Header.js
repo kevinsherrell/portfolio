@@ -32,12 +32,11 @@ class Header extends Component {
   }
 
   handleScroll = e => {
-    console.log(window.scrollY);
     if (window.scrollY > 50) {
       this.pageHeader.classList.add("scrolled");
       this.hamburgerButton.classList.remove("hamburgerButton");
       this.hamburgerButton.classList.add("scrolledButton");
-      console.log(this.pageHeader.attributes);
+      // console.log(this.pageHeader.attributes);
     } else if (window.scrollY < 50) {
       this.pageHeader.classList.remove("scrolled");
       this.hamburgerButton.classList.remove("scrolledButton");
@@ -131,20 +130,7 @@ class Header extends Component {
                   </Link>
                 </li>
               </ul>
-              {/* <ul className="nonMobileNav">
-                <li>
-                  <Scrollchor to="#home" >HOME</Scrollchor>
-                </li>
-                <li>
-                  <Scrollchor to="#skills">ABOUT/SKILLS</Scrollchor>
-                </li>
-                <li>
-                  <Scrollchor to="#projects">PROJECTS</Scrollchor>
-                </li>
-                <li>
-                  <Scrollchor to="#contact">CONTACT</Scrollchor>
-                </li>
-              </ul> */}
+            
               {/* mobile */}
 
               <button

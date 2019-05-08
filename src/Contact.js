@@ -5,7 +5,6 @@ import linkedIn from "./linkedin-plain.svg";
 class Contact extends Component {
   state = {};
   render() {
-    console.log(this.props.location)
     return (
       <section className="contact" id='contact'>
         <div className="container">

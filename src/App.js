@@ -16,7 +16,6 @@ class App extends Component {
 
  
   render() {
-    console.log(this.childRef)
     return (
       <React.Fragment>
         <Header ref={c => (this.header = c)} />
