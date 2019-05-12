@@ -20,7 +20,7 @@ class Projects extends Component {
               Sass
             </p>
             <a href='https://not-facebook.herokuapp.com' target='blank'><button className="projectLive">View Project</button></a>
-            <a href='https://github.com/kevinsherrell/notFacebook'><button className="projectGithub">Github</button></a>
+            <a href='https://github.com/kevinsherrell/notFacebook' target='blank'><button className="projectGithub">Github</button></a>
           </div>
           <div className="projectImage">
             <img src={notFacebookImage} alt="" />
