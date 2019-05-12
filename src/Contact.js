@@ -14,12 +14,16 @@ class Contact extends Component {
             feedback on my code, my info is below!
           </p>
           <p className="email">kevinsherrell@ksherrell.com</p>
-          <button className="contactGitHub">
-            <img src={gitHub} alt="" />
-          </button>
-          <button className="contactLinkedIn">
-            <img src={linkedIn} alt="" />
-          </button>
+          <a href='https://github.com/kevinsherrell' target='blank'>
+            <button className="contactGitHub">
+              <img src={gitHub} alt="" />
+            </button>
+          </a>
+          <a href='https://www.linkedin.com/in/kevinsherrell1986/' target='blank'>
+            <button className="contactLinkedIn">
+              <img src={linkedIn} alt="" />
+            </button>
+          </a>
         </div>
       </section>
     );
