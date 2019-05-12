@@ -22,7 +22,7 @@ const Hero = () => {
               <button>Projects</button>
             </Link>
 
-            <Link to='https://docs.google.com/document/d/1m59DhZGj9wN7kax7WpHsWjQJ3ETDAmd2QdPfXOvzSeo/export?format=pdf'><button><span><i class="fas fa-download"></i></span> Resume</button></Link>
+            <a href='https://docs.google.com/document/d/1m59DhZGj9wN7kax7WpHsWjQJ3ETDAmd2QdPfXOvzSeo/export?format=pdf'><button><span><i class="fas fa-download"></i></span> Resume</button></a>
           </div>
         </div>
       </div>

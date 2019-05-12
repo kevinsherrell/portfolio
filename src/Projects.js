@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-
+import {Link} from 'react-router-dom'
 import notFacebookImage from "./notfacebook.PNG";
 class Projects extends Component {
     state = {  }
@@ -19,8 +19,8 @@ class Projects extends Component {
               React, Redux, MongoDb, Express, Node, Passport.js (jwt strategy),
               Sass
             </p>
-            <button className="projectLive">View Project</button>
-            <button className="projectGithub">Github</button>
+            <a href='https://not-facebook.herokuapp.com' target='blank'><button className="projectLive">View Project</button></a>
+            <a href='https://github.com/kevinsherrell/notFacebook'><button className="projectGithub">Github</button></a>
           </div>
           <div className="projectImage">
             <img src={notFacebookImage} alt="" />
