@@ -15,7 +15,7 @@ class Projects extends Component {
           <div className="projectInfo">
             <h3>notFacebook</h3>
             <p>A full stack replica of facebook.</p>
-            <p>
+            <p className='technologies'>
               React, Redux, MongoDb, Express, Node, Passport.js (jwt strategy),
               Sass
             </p>
