@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {Link} from 'react-router-dom'
 import notFacebookImage from "./notfacebook.PNG";
+import NYT from './NytSearchImage.PNG'
 class Projects extends Component {
     state = {  }
     render() { 
@@ -15,6 +16,7 @@ class Projects extends Component {
           <div className="projectInfo">
             <h3>notFacebook</h3>
             <p>A full stack replica of facebook.</p>
+            <h4>TECHNOLOGIES USED: </h4>
             <p className='technologies'>
               React, Redux, MongoDb, Express, Node, Passport.js (jwt strategy),
               Sass
@@ -24,6 +26,25 @@ class Projects extends Component {
           </div>
           <div className="projectImage">
             <img src={notFacebookImage} alt="" />
+          </div>
+        </div>
+      </div>
+
+      
+      <div className="projectDescription">
+        <div className="container">
+          <div className="projectInfo">
+            <h3>NYT Search</h3>
+            <p>A New York Times article search app.</p>
+            <h4>TECHNOLOGIES USED: </h4>
+            <p className='technologies'>
+              React, Styled Components, New York Times Api
+            </p>
+            <a href='https://not-facebook.herokuapp.com' target='blank'><button className="projectLive">View Project</button></a>
+            <a href='https://github.com/kevinsherrell/notFacebook' target='blank'><button className="projectGithub">Github</button></a>
+          </div>
+          <div className="projectImage">
+            <img src={NYT} alt="" />
           </div>
         </div>
       </div>

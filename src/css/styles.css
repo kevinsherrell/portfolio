@@ -482,15 +482,28 @@ footer {
     margin-bottom: 20px; }
     .projects .projectDescription .container .projectInfo {
       width: 50%; }
+      .projects .projectDescription .container .projectInfo button {
+        width: 100%; }
+      .projects .projectDescription .container .projectInfo p {
+        line-height: 25px;
+        text-align: center; }
+      .projects .projectDescription .container .projectInfo h3 {
+        padding-bottom: 5px; }
+      .projects .projectDescription .container .projectInfo h4 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+        font-size: 18px; }
     .projects .projectDescription .container .projectImage {
       width: 50%;
-      text-align: right; }
+      text-align: right;
+      padding-left: 35px; }
       .projects .projectDescription .container .projectImage img {
-        width: 300px;
+        width: 100%;
         padding: 10px 0; }
   .projects .projectDescription:nth-child(odd) .container {
     flex-direction: row-reverse; }
     .projects .projectDescription:nth-child(odd) .container .projectImage {
+      padding-right: 35px;
       text-align: left; }
   .contact .container {
     width: 70%; } }

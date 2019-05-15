@@ -13,17 +13,38 @@
       .container {
         display: flex;
         align-items: center;
+        
         margin-top: 70px;
         margin-bottom: 20px;
 
         .projectInfo {
           width: 50%;
+          button{
+            width: 100%;
+          }
+          p{
+            line-height: 25px;
+            text-align: center;
+          }
+          // p:nth-child(3){
+          //   padding-top: 20px;
+          // }
+          h3{
+            padding-bottom: 5px;
+          }
+          h4{
+            padding-top: 20px;
+            padding-bottom: 5px;
+            font-size: 18px;
+          }
         }
         .projectImage {
           width: 50%;
           text-align: right;
+          padding-left: 35px;
           img {
-            width: 300px;
+            // width: 300px;
+            width: 100%;
             padding: 10px 0;
           }
         }
@@ -32,6 +53,7 @@
         .container {
           flex-direction: row-reverse;
           .projectImage {
+            padding-right: 35px;
             text-align: left;
           }
         }
