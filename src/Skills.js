@@ -1,15 +1,15 @@
 import React, {Component} from "react";
 
-import html5 from "./html5-plain.svg";
-import css3 from "./css3-plain.svg";
-import bootstrap from "./bootstrap-plain.svg";
-import mongo from "./mongodb-plain.svg";
-import node from "./nodejs-plain.svg";
-import react from "./react-original.svg";
-import redux from "./redux-original.svg";
-import express from "./express-original.svg";
-import git from "./git-plain.svg";
-import javascript from "./javascript-plain.svg";
+import html5 from "./static/html5-plain.svg";
+import css3 from "./static/css3-plain.svg";
+import bootstrap from "./static/bootstrap-plain.svg";
+import mongo from "./static/mongodb-plain.svg";
+import node from "./static/nodejs-plain.svg";
+import react from "./static/react-original.svg";
+import redux from "./static/redux-original.svg";
+import express from "./static/express-original.svg";
+import git from "./static/git-plain.svg";
+import javascript from "./static/javascript-plain.svg";
 
 class Skills extends Component {
   state = {  }

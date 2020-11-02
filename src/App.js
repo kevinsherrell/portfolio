@@ -9,7 +9,7 @@ import Footer from "./Footer";
 // images
 
 // css
-import "./css/styles.css";
+import "./static/css/styles.css";
 
 class App extends Component {
   state = {};

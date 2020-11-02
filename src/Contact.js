@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import gitHub from "./github-original.svg";
-import linkedIn from "./linkedin-plain.svg";
+import gitHub from "./static/github-original.svg";
+import linkedIn from "./static/linkedin-plain.svg";
 class Contact extends Component {
   state = {};
   render() {

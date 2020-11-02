@@ -7,8 +7,8 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 import Hero from "./Hero";
 
-import logo2 from "./ksherrelldotcomlogo2.png";
-import hamburger from "./hamburger.png";
+import logo2 from "./static/ksherrelldotcomlogo2.png";
+import hamburger from "./static/hamburger.png";
 
 class Header extends Component {
   state = {
@@ -50,7 +50,7 @@ class Header extends Component {
   };
   menuScrollOut = e => {};
   render() {
-    const backgroundImage = require("./background.jpg");
+    const backgroundImage = require("./static/background.jpg");
     const backgroundStyles = {
       backgroundImage: `url("${backgroundImage}")`,
       backgroundAttachment: "scroll",

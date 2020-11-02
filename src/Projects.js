@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Link} from 'react-router-dom'
-import notFacebookImage from "./notfacebook.PNG";
-import NYT from './NytSearchImage.PNG'
+import notFacebookImage from "./static/notfacebook.PNG";
+import NYT from './static/NytSearchImage.PNG'
 class Projects extends Component {
     state = {  }
     render() { 
