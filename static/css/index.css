@@ -1,0 +1,131 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+}
+
+/* ALL IMAGES SHOULD CONFORM TO THE SIZE OF THEIR CONTAINERS*/
+img{
+    width: 100%;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+header {
+    padding: 10px 0px 10px 0px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.header-title {
+    font-size: 1rem;
+    font-weight: initial;
+}
+
+.header-nav {
+    margin-left: auto;
+    display: inline-block;
+}
+
+.header-nav__item {
+    margin-left: 10px;
+}
+
+/*Hero Section*/
+.hero {
+    min-height: 500px;
+    font-size: 1.5em;
+}
+
+.hero .container {
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*padding: 25% 0;*/
+    text-align: center;
+}
+
+.hero h1 > span {
+    color: green;
+    font-size: 3em;
+}
+
+/*Skills Section*/
+.skills__header {
+    text-align: center;
+    color: green;
+}
+
+.skills .container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.front-end,
+.back-end,
+.tools {
+    padding: 15px;
+    /*border: 1px solid black;*/
+    /*border-radius: 15px;*/
+    width: 33%;
+}
+
+.front-end ul,
+.back-end ul,
+.tools ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.front-end li,
+.back-end li,
+.tools li{
+    width: 45%;
+}
+
+.front-end__header,
+.back-end__header,
+.tools__header {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.back-end {
+    margin: 0px 10px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.skills .container li {
+    padding: 15px;
+}
+/*PROJECTS*/
+
+.projects .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project__item{
+    width: 50%;
+}
